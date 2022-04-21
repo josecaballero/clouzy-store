@@ -1,31 +1,29 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const MenuItemContainer = styled.div`
-	height: ${({ size }) => (size ? '380px' : '240px')};
-	min-width: 30%;
-	overflow: hidden;
-	flex: 1 1 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: 1px solid black;
-	margin: 0 7.5px 15px;
-	overflow: hidden;
+  height: ${({ size }) => (size ? "380px" : "240px")};
+  min-width: 30%;
+  overflow: hidden;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 0 7.5px 15px;
+  overflow: hidden;
+  cursor: pointer;
 
-	&:hover {
-		cursor: pointer;
+  &:hover {
+    & .background-image {
+      transform: scale(1.1);
+    }
 
-		& .background-image {
-			transform: scale(1.1);
-			transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-		}
+    & .content {
+      opacity: 0.9;
+    }
+  }
 
-		& .content {
-			opacity: 0.9;
-		}
-	}
-
-	&:first-child {
+  &:first-child {
     margin-right: 7.5px;
   }
 
@@ -40,6 +38,7 @@ export const BackgroundImageContainer = styled.div`
   background-size: cover;
   background-position: center;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
+  transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 `;
 
 export const ContentContainer = styled.div`
@@ -53,6 +52,7 @@ export const ContentContainer = styled.div`
   background-color: white;
   opacity: 0.7;
   position: absolute;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 `;
 
 export const ContentTitle = styled.span`

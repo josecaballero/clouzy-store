@@ -10,7 +10,7 @@ import {
   BackgroundImage,
   NameContainer,
   PriceContainer,
-} from "./collection-styles.styles";
+} from "./collection-item.styles";
 
 const CollectionItem = ({ item }) => {
   const dispatch = useDispatch();
@@ -20,8 +20,8 @@ const CollectionItem = ({ item }) => {
     <CollectionItemContainer onClick={() => dispatch(addItem(item))}>
       <BackgroundImage className="image" imageUrl={imageUrl} />
       <CollectionFooterContainer>
-        <NameContainer>{name}</NameContainer>
-        <PriceContainer>{price}</PriceContainer>
+        <span>{name}</span>
+        <span>${price}</span>
       </CollectionFooterContainer>
       <AddButton inverted>Add to cart</AddButton>
     </CollectionItemContainer>
