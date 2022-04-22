@@ -42,6 +42,14 @@ export const TotalContainer = styled.div`
   margin-top: 30px;
   margin-left: auto;
   font-size: 36px;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 24px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 export const WarningContainer = styled.div`
@@ -49,4 +57,12 @@ export const WarningContainer = styled.div`
   margin-top: 40px;
   font-size: 24px;
   color: red;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 18px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;

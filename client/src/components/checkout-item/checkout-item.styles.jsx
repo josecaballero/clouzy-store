@@ -28,6 +28,10 @@ export const TextContainer = styled.span`
   @media only screen and (max-width: 1024px) {
     font-size: 16px;
   }
+
+  @media only screen and (max-width: 520px) {
+    font-size: 14px;
+  }
 `;
 
 export const QuantityContainer = styled(TextContainer)`
