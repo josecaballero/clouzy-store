@@ -32,11 +32,6 @@ export const CheckoutHeaderContainer = styled.div`
 
 export const HeaderBlockContainer = styled.div`
   text-transform: capitalize;
-  width: 23%;
-
-  &:last-child {
-    width: 8%;
-  }
 
   @media only screen and (max-width: 499px) {
     font-size: 14px;
