@@ -19,6 +19,12 @@ export const CollectionItemContainer = styled.div`
       display: flex;
     }
   }
+
+  @media only screen and (max-width: 800px) {
+    button {
+      display: flex;
+    }
+  }
 `;
 
 export const AddButton = styled(CustomButton)`
@@ -44,4 +50,8 @@ export const CollectionFooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `;

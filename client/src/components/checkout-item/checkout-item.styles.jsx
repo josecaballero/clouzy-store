@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutItemContainer = styled.div`
   width: 100%;
@@ -22,6 +22,12 @@ export const ImageContainer = styled.div`
 
 export const TextContainer = styled.span`
   width: 23%;
+  display: inline-block;
+  padding-right: 15px;
+
+  @media only screen and (max-width: 1024px) {
+    font-size: 16px;
+  }
 `;
 
 export const QuantityContainer = styled(TextContainer)`

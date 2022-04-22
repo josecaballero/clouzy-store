@@ -11,7 +11,12 @@ import { Link } from "react-router-dom";
 
 import { ReactComponent as Logo } from "../../assets/crown.svg";
 
-import { HeaderContainer, OptionsContainer, OptionLink } from "./header.styles";
+import {
+  HeaderContainer,
+  OptionsContainer,
+  LogoContainer,
+  OptionLink,
+} from "./header.styles";
 
 const Header = () => {
   const currentUser = useSelector(selectCurrentUser);
@@ -20,9 +25,9 @@ const Header = () => {
 
   return (
     <HeaderContainer>
-      <Link to="/" className="logo">
+      <LogoContainer to="/" className="logo">
         <Logo />
-      </Link>
+      </LogoContainer>
       <OptionsContainer>
         <OptionLink to="/shop">SHOP</OptionLink>
         <OptionLink to="/contact">CONTACT</OptionLink>

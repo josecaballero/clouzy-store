@@ -30,6 +30,14 @@ export const MenuItemContainer = styled.div`
   &:last-child {
     margin-left: 7.5px;
   }
+
+  @media only screen and (max-width: 800px) {
+    height: 200px;
+  }
+
+  @media only screen and (max-width: 499px) {
+    width: 100%;
+  }
 `;
 
 export const BackgroundImageContainer = styled.div`
@@ -42,8 +50,7 @@ export const BackgroundImageContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  height: 90px;
-  padding: 0 25px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,6 +60,10 @@ export const ContentContainer = styled.div`
   opacity: 0.7;
   position: absolute;
   transition: opacity 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+
+  @media only screen (min-width: 500px) and (max-width: 769px) {
+    padding: 12px;
+  }
 `;
 
 export const ContentTitle = styled.span`
@@ -60,9 +71,17 @@ export const ContentTitle = styled.span`
   margin-bottom: 6px;
   font-size: 22px;
   color: #4a4a4a;
+
+  @media only screen and (min-width: 500px) and (max-width: 769px) {
+    font-size: 16px;
+  }
 `;
 
 export const ContentSubtitle = styled.span`
   font-weight: lighter;
   font-size: 16px;
+
+  @media only screen and (min-width: 500px) and (max-width: 769px) {
+    font-size: 12px;
+  }
 `;

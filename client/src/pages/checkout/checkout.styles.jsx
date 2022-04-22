@@ -1,16 +1,24 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutPageContainer = styled.div`
-  width: 55%;
+  width: 60%;
   min-height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto 0;
+  margin: 0 auto;
 
   button {
     margin-left: auto;
     margin-top: 50px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -28,6 +36,10 @@ export const HeaderBlockContainer = styled.div`
 
   &:last-child {
     width: 8%;
+  }
+
+  @media only screen and (max-width: 499px) {
+    font-size: 14px;
   }
 `;
 

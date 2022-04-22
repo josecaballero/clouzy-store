@@ -1,8 +1,15 @@
 import styled from "styled-components";
 
 export const SignInAndSignUpContainer = styled.div`
-  width: 850px;
+  max-width: 1024px;
   display: flex;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
 `;
