@@ -47,7 +47,7 @@ export const CustomButtonContainer = styled.button`
   font-size: 12px;
   padding: 20px;
   text-transform: uppercase;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bolder;
   cursor: pointer;
   display: flex;

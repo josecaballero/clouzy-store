@@ -28,13 +28,19 @@ export const CheckoutHeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid darkgrey;
+  gap: 15px;
 `;
 
 export const HeaderBlockContainer = styled.div`
   text-transform: capitalize;
+  flex: 1;
 
   @media only screen and (max-width: 499px) {
     font-size: 14px;
+  }
+
+  @media only screen and (max-width: 375px) {
+    font-size: 12px;
   }
 `;
 

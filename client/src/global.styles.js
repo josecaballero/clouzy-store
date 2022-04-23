@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     padding: 40px;
 
     @media only screen and (max-width: 769px) {
